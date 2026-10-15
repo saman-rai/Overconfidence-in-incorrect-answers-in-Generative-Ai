@@ -1,0 +1,11 @@
+id,question,gold,greedy_answer,greedy_correct,token_prob,agreement,verbal_answer,verbal_correct,verbal_conf
+qb_6721,What is the name of the character played by actor Nicholas Lyndhurst in the British television series ‘Goodnight Sweetheart’?,Gary Sparrow | Phoebe Sparrow | Gary sparrow | Donald Bamford | Phoebe Bamford,Gary Sparrow,1,0.994,1.0,Gary Sparrow,1,0.95
+wh_4301,What name is given to the study of insects ?,ENTOMOLOGY | Entomologists | Insectology | Entomologist | Entymologist,Entomology,1,1.0,1.0,Entomology,1,1.0
+dpql_5555,Of the ten most populated cities of the USA which is furthest north?,"Detroit | The 313 | Detroit, Michigan | 2014 Southeastern Michigan flood | Detroit, Mich.",Seattle,0,0.559,0.4,Seattle,0,0.9
+qb_9725,‘The Way I Am’ is a 2008 autobiography by which US singer?,Eminem | 8 Mile Style | Eminem Controversies | Marshall B. Mathers III | Live at Comerica Park (Eminem album),Eminem,1,0.2197,0.6,Eminem,1,0.95
+tc_2299,How was President Kennedy assassinated?,Shot | Shot (unit) | Shot (drink) | Shot (beverage) | Shot (disambiguation),By gunshot (shot by a sniper),1,0.1946,0.2,"President Kennedy was assassinated by being shot while riding in a motorcade in Dallas, Texas",1,0.95
+qz_429,What was the Spice Girls' debut single called?,Wannabee | Wannabes (disambiguation) | Wannabes | Wanna Be | Wannabe (disambiguation),Wannabe,1,0.9994,1.0,Wannabe,1,1.0
+qz_5496,What was left in Pandora's Box after all the evil escaped?,Hope | Hopes | Aspiration (long-term hope) | False hope,Hope,1,1.0,1.0,Hope,1,0.95
+qb_8445,"In medicine, if something is subcutaneous it is applied or located under which organ of the body?",Skin | Animal skin | Skin cell turnover | Cutaneous fold | Skin cells,Skin,1,0.9046,1.0,Skin,1,1.0
+qz_1880,"Who was the cartoon adversary of Pixie and Dixie, who would often say I hate those meeces to pieces?",Mr Jinx | Mr. Jinx | Jinxy,Mr. Jinks,0,0.9094,1.0,Mr. Jinks,0,1.0
+wh_1280,In which Lake District town would you find the Cumberland Pencil Museum?,"KESWICK | Keswick (disambiguation) | Keswick, England | Keswick",Keswick,1,0.9991,1.0,Keswick,1,0.95

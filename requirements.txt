@@ -1,0 +1,7 @@
+openai>=1.40
+datasets>=2.19
+numpy
+matplotlib
+python-pptx>=0.6.23
+pillow
+tqdm

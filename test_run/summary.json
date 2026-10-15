@@ -1,0 +1,546 @@
+{
+  "run": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "dataset": "triviaqa",
+    "n_requested": 10,
+    "k": 5,
+    "seed": 7,
+    "logprobs_available": true,
+    "n_param_supported": true,
+    "api_calls": 30,
+    "prompt_tokens": 2392,
+    "completion_tokens": 280,
+    "wall_seconds": 10.6,
+    "finished_at": "2026-10-16 02:17",
+    "n_questions": 10,
+    "dataset_label": "TriviaQA (rc.nocontext, validation)",
+    "verbal_parse_failures": 0
+  },
+  "high_conf_threshold": 0.9,
+  "temperatures": {
+    "token": 3.0792410553301326,
+    "verbal": 10.168120423433368
+  },
+  "methods": {
+    "Token probability": {
+      "description": "Probability the model assigns to its own answer tokens (greedy decoding)",
+      "api_calls_per_question": 1,
+      "color": "#3987E5",
+      "metrics": {
+        "n": 10,
+        "accuracy": 0.8,
+        "mean_conf": 0.7779874442715728,
+        "overconfidence_gap": -0.022012555728427197,
+        "ece": 0.29511831626105733,
+        "brier": 0.24061222332572657,
+        "auroc": 0.6875,
+        "aurc": 0.09817460317460316,
+        "acc_at_80cov": 0.75,
+        "confidently_wrong_rate": 0.1,
+        "wrong_with_high_conf_share": 0.5,
+        "mean_conf_when_wrong": 0.7342140808505886,
+        "mean_conf_when_right": 0.7889307851268189
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 1,
+          "mean_conf": 0.19463101679111972,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 1,
+          "mean_conf": 0.21971462326145827,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 1,
+          "mean_conf": 0.5590328612001533,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 7,
+          "mean_conf": 0.9723565630661425,
+          "accuracy": 0.8571428571428571
+        }
+      ]
+    },
+    "Token prob. + TS": {
+      "description": "Token probability rescaled by temperature scaling (median T = 3.08, 5-fold CV)",
+      "api_calls_per_question": 1,
+      "color": "#199E70",
+      "metrics": {
+        "n": 10,
+        "accuracy": 0.8,
+        "mean_conf": 0.7258542392857208,
+        "overconfidence_gap": -0.07414576071427925,
+        "ece": 0.3236046852744855,
+        "brier": 0.17254880073913423,
+        "auroc": 0.6875,
+        "aurc": 0.09817460317460316,
+        "acc_at_80cov": 0.75,
+        "confidently_wrong_rate": 0.0,
+        "wrong_with_high_conf_share": 0.0,
+        "mean_conf_when_wrong": 0.6236473114005157,
+        "mean_conf_when_right": 0.7514059712570222
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 2,
+          "mean_conf": 0.3917554966818542,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 1,
+          "mean_conf": 0.5185969794036256,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 1,
+          "mean_conf": 0.6372392336165341,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 1,
+          "mean_conf": 0.7286976433974057,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 2,
+          "mean_conf": 0.84610393469567,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 3,
+          "mean_conf": 0.9660965578948648,
+          "accuracy": 1.0
+        }
+      ]
+    },
+    "Verbalized confidence": {
+      "description": "Model states 'Confidence: NN%' with its answer",
+      "api_calls_per_question": 1,
+      "color": "#D95926",
+      "metrics": {
+        "n": 10,
+        "accuracy": 0.8,
+        "mean_conf": 0.9649999999999999,
+        "overconfidence_gap": 0.1649999999999998,
+        "ece": 0.1649999999999998,
+        "brier": 0.18225000000000002,
+        "auroc": 0.59375,
+        "aurc": 0.11956349206349207,
+        "acc_at_80cov": 0.875,
+        "confidently_wrong_rate": 0.2,
+        "wrong_with_high_conf_share": 1.0,
+        "mean_conf_when_wrong": 0.95,
+        "mean_conf_when_right": 0.96875
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 10,
+          "mean_conf": 0.9649999999999999,
+          "accuracy": 0.8
+        }
+      ]
+    },
+    "Verbalized + TS": {
+      "description": "Verbalized confidence rescaled by temperature scaling (median T = 10.17, 5-fold CV)",
+      "api_calls_per_question": 1,
+      "color": "#C98500",
+      "metrics": {
+        "n": 10,
+        "accuracy": 0.8,
+        "mean_conf": 0.6942183122687164,
+        "overconfidence_gap": -0.1057816877312836,
+        "ece": 0.30574451384408974,
+        "brier": 0.2354187174420276,
+        "auroc": 0.40625,
+        "aurc": 0.2265079365079365,
+        "acc_at_80cov": 0.75,
+        "confidently_wrong_rate": 0.1,
+        "wrong_with_high_conf_share": 0.5,
+        "mean_conf_when_wrong": 0.7824463237345736,
+        "mean_conf_when_right": 0.6721613094022522
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 6,
+          "mean_conf": 0.5697888939022605,
+          "accuracy": 0.8333333333333334
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 2,
+          "mean_conf": 0.7618178143547856,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 2,
+          "mean_conf": 0.9999070652820155,
+          "accuracy": 0.5
+        }
+      ]
+    },
+    "Self-consistency (k=5)": {
+      "description": "Share of 5 samples (temperature 1.0) that agree with the greedy answer",
+      "api_calls_per_question": 6,
+      "color": "#D55181",
+      "metrics": {
+        "n": 10,
+        "accuracy": 0.8,
+        "mean_conf": 0.82,
+        "overconfidence_gap": 0.019999999999999907,
+        "ece": 0.26000000000000006,
+        "brier": 0.196,
+        "auroc": 0.625,
+        "aurc": 0.08567460317460317,
+        "acc_at_80cov": 0.875,
+        "confidently_wrong_rate": 0.1,
+        "wrong_with_high_conf_share": 0.5,
+        "mean_conf_when_wrong": 0.7,
+        "mean_conf_when_right": 0.85
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 1,
+          "mean_conf": 0.2,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 1,
+          "mean_conf": 0.4,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 1,
+          "mean_conf": 0.6,
+          "accuracy": 1.0
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 7,
+          "mean_conf": 1.0,
+          "accuracy": 0.8571428571428571
+        }
+      ]
+    }
+  },
+  "triage": [
+    {
+      "tau": 0.4,
+      "accepted_share": 0.9,
+      "escalated_share": 0.1,
+      "accuracy_accepted": 0.7777777777777778,
+      "error_rate_escalated": 0.0,
+      "errors_caught_share": 0.0
+    },
+    {
+      "tau": 0.6,
+      "accepted_share": 0.8,
+      "escalated_share": 0.2,
+      "accuracy_accepted": 0.875,
+      "error_rate_escalated": 0.5,
+      "errors_caught_share": 0.5
+    },
+    {
+      "tau": 0.8,
+      "accepted_share": 0.7,
+      "escalated_share": 0.3,
+      "accuracy_accepted": 0.8571428571428571,
+      "error_rate_escalated": 0.3333333333333333,
+      "errors_caught_share": 0.5
+    },
+    {
+      "tau": 1.0,
+      "accepted_share": 0.7,
+      "escalated_share": 0.3,
+      "accuracy_accepted": 0.8571428571428571,
+      "error_rate_escalated": 0.3333333333333333,
+      "errors_caught_share": 0.5
+    }
+  ],
+  "triage_main": {
+    "tau": 0.8,
+    "accepted_share": 0.7,
+    "escalated_share": 0.3,
+    "accuracy_accepted": 0.8571428571428571,
+    "error_rate_escalated": 0.3333333333333333,
+    "errors_caught_share": 0.5
+  },
+  "confidently_wrong_examples": [
+    {
+      "question": "Who was the cartoon adversary of Pixie and Dixie, who would often say I hate those meeces to pieces?",
+      "model_answer": "Mr. Jinks",
+      "gold": "Mr Jinx",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "Of the ten most populated cities of the USA which is furthest north?",
+      "model_answer": "Seattle",
+      "gold": "Detroit",
+      "confidence": 0.9,
+      "agreement": 0.4
+    }
+  ],
+  "n_confidently_wrong_verbal": 2
+}

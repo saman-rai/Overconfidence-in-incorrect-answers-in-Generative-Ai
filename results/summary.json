@@ -1,0 +1,403 @@
+{
+  "run": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "dataset": "triviaqa",
+    "n_requested": 400,
+    "k": 5,
+    "seed": 7,
+    "logprobs_available": false,
+    "n_param_supported": true,
+    "api_calls": 987,
+    "prompt_tokens": 80027,
+    "completion_tokens": 9532,
+    "wall_seconds": 130.6,
+    "finished_at": "2026-10-16 02:22",
+    "n_questions": 400,
+    "dataset_label": "TriviaQA (rc.nocontext, validation)",
+    "verbal_parse_failures": 0
+  },
+  "high_conf_threshold": 0.9,
+  "temperatures": {
+    "verbal": 4.278591572470006
+  },
+  "methods": {
+    "Verbalized confidence": {
+      "description": "Model states 'Confidence: NN%' with its answer",
+      "api_calls_per_question": 1,
+      "color": "#D95926",
+      "metrics": {
+        "n": 400,
+        "accuracy": 0.82,
+        "mean_conf": 0.9582499999999999,
+        "overconfidence_gap": 0.13824999999999998,
+        "ece": 0.13825000000000015,
+        "brier": 0.1519875,
+        "auroc": 0.7726329607046071,
+        "aurc": 0.11051441466755353,
+        "acc_at_80cov": 0.90625,
+        "confidently_wrong_rate": 0.1475,
+        "wrong_with_high_conf_share": 0.8194444444444444,
+        "mean_conf_when_wrong": 0.9104166666666669,
+        "mean_conf_when_right": 0.96875
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 1,
+          "mean_conf": 0.6,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 3,
+          "mean_conf": 0.6999999999999998,
+          "accuracy": 0.0
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 12,
+          "mean_conf": 0.85,
+          "accuracy": 0.25
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 384,
+          "mean_conf": 0.9645833333333335,
+          "accuracy": 0.8463541666666666
+        }
+      ]
+    },
+    "Verbalized + TS": {
+      "description": "Verbalized confidence rescaled by temperature scaling (median T = 4.28, 5-fold CV)",
+      "api_calls_per_question": 1,
+      "color": "#C98500",
+      "metrics": {
+        "n": 400,
+        "accuracy": 0.82,
+        "mean_conf": 0.7848007355046556,
+        "overconfidence_gap": -0.035199264495344385,
+        "ece": 0.08069656059819288,
+        "brier": 0.13687466420104602,
+        "auroc": 0.7582571138211383,
+        "aurc": 0.11190534205952293,
+        "acc_at_80cov": 0.90625,
+        "confidently_wrong_rate": 0.03,
+        "wrong_with_high_conf_share": 0.16666666666666666,
+        "mean_conf_when_wrong": 0.6840448192068025,
+        "mean_conf_when_right": 0.806917887862721
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 9,
+          "mean_conf": 0.5690545491734225,
+          "accuracy": 0.1111111111111111
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 216,
+          "mean_conf": 0.6519483100985768,
+          "accuracy": 0.7592592592592593
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 175,
+          "mean_conf": 0.9598741044457653,
+          "accuracy": 0.9314285714285714
+        }
+      ]
+    },
+    "Self-consistency (k=5)": {
+      "description": "Share of 5 samples (temperature 1.0) that agree with the greedy answer",
+      "api_calls_per_question": 6,
+      "color": "#D55181",
+      "metrics": {
+        "n": 400,
+        "accuracy": 0.81,
+        "mean_conf": 0.8985,
+        "overconfidence_gap": 0.08849999999999991,
+        "ece": 0.09849999999999999,
+        "brier": 0.11630000000000001,
+        "auroc": 0.7950373619233269,
+        "aurc": 0.11320010140154664,
+        "acc_at_80cov": 0.921875,
+        "confidently_wrong_rate": 0.0625,
+        "wrong_with_high_conf_share": 0.32894736842105265,
+        "mean_conf_when_wrong": 0.6368421052631578,
+        "mean_conf_when_right": 0.9598765432098766
+      },
+      "reliability": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 8,
+          "mean_conf": 0.0,
+          "accuracy": 0.25
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 14,
+          "mean_conf": 0.20000000000000004,
+          "accuracy": 0.14285714285714285
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 11,
+          "mean_conf": 0.4,
+          "accuracy": 0.36363636363636365
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6000000000000001,
+          "count": 23,
+          "mean_conf": 0.5999999999999999,
+          "accuracy": 0.43478260869565216
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 0,
+          "mean_conf": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 28,
+          "mean_conf": 0.8000000000000002,
+          "accuracy": 0.5357142857142857
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 316,
+          "mean_conf": 1.0,
+          "accuracy": 0.9208860759493671
+        }
+      ]
+    }
+  },
+  "triage": [
+    {
+      "tau": 0.4,
+      "accepted_share": 0.945,
+      "escalated_share": 0.055,
+      "accuracy_accepted": 0.8465608465608465,
+      "error_rate_escalated": 0.8181818181818182,
+      "errors_caught_share": 0.23684210526315788
+    },
+    {
+      "tau": 0.6,
+      "accepted_share": 0.9175,
+      "escalated_share": 0.0825,
+      "accuracy_accepted": 0.8610354223433242,
+      "error_rate_escalated": 0.7575757575757576,
+      "errors_caught_share": 0.32894736842105265
+    },
+    {
+      "tau": 0.8,
+      "accepted_share": 0.86,
+      "escalated_share": 0.14,
+      "accuracy_accepted": 0.8895348837209303,
+      "error_rate_escalated": 0.6785714285714286,
+      "errors_caught_share": 0.5
+    },
+    {
+      "tau": 1.0,
+      "accepted_share": 0.79,
+      "escalated_share": 0.21,
+      "accuracy_accepted": 0.9208860759493671,
+      "error_rate_escalated": 0.6071428571428571,
+      "errors_caught_share": 0.6710526315789473
+    }
+  ],
+  "triage_main": {
+    "tau": 0.8,
+    "accepted_share": 0.86,
+    "escalated_share": 0.14,
+    "accuracy_accepted": 0.8895348837209303,
+    "error_rate_escalated": 0.6785714285714286,
+    "errors_caught_share": 0.5
+  },
+  "confidently_wrong_examples": [
+    {
+      "question": "How was President Kennedy assassinated?",
+      "model_answer": "By gunshot",
+      "gold": "Shot",
+      "confidence": 1.0,
+      "agreement": 0.8
+    },
+    {
+      "question": "Of the ten most populated cities of the USA which is furthest north?",
+      "model_answer": "Chicago",
+      "gold": "Detroit",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "Who was the cartoon adversary of Pixie and Dixie, who would often say I hate those meeces to pieces?",
+      "model_answer": "Jinks the Cat",
+      "gold": "Mr Jinx",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "Spud, Shot and Hand are all types of what?",
+      "model_answer": "Can of beer",
+      "gold": "Gun",
+      "confidence": 1.0,
+      "agreement": 0.2
+    },
+    {
+      "question": "What is the largest city in Ohio?",
+      "model_answer": "Columbus",
+      "gold": "Cleveland",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "Which famous resident resides at Highgrove House?",
+      "model_answer": "King Charles III",
+      "gold": "The Prince of Wales",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "In ‘Big School’ (2013), what subject was taught by Philip Glenister’s character?",
+      "model_answer": "Drama",
+      "gold": "P.E.",
+      "confidence": 1.0,
+      "agreement": 1.0
+    },
+    {
+      "question": "Which was the first Liverpool group to top the UK chart?",
+      "model_answer": "Freddie and the Dreamers",
+      "gold": "Gerry & The Pacemakers",
+      "confidence": 1.0,
+      "agreement": 1.0
+    }
+  ],
+  "n_confidently_wrong_verbal": 59
+}
